@@ -1,0 +1,289 @@
+@media (max-width: 1280px){
+	.full-check, .overcoming-obstacles {
+		margin-left: 9%;
+	}
+    .consultation-h {
+    	font-size: 28px;
+    }
+    .consultation-p {
+    	font-size: 12px;
+    }
+    .bbt{
+    	font-size: 16px;
+    }
+    .chislo{
+    	font-size: 24px;
+    }
+    .heading {
+    	font-size: 13px;
+    }
+}
+@media (max-width: 980px){
+	.full-check, .overcoming-obstacles {
+		margin-left: 6%;
+	}
+	.check-sign {
+		font-size: 28px;
+	}
+	.attach-photo {
+		font-size: 11px;
+	}
+	.bbt{
+		font-size: 16px;
+	}
+    .chislo{
+    	font-size: 24px;
+    }
+    .is-free, .for-sure {
+    	margin-left: 6%;
+    }
+    .about-company-p {
+    	font-size: 11px;
+    }
+    .sidebar-img {
+    	margin-bottom: 0;
+    }
+    .numeric {
+    	font-size: 30px;
+    }
+    .sidebar-img {
+    	height: 50px; width: 50px;
+    }
+    .validation-rule-text {
+    	font-size: 12px;
+    }
+    .check-block {
+    	height: 170px;
+    }
+    .slider-img {
+    height: 13vh;
+	}
+}
+@media (max-width: 768px){
+	.check-sign {
+    font-size: 22px;
+	}
+	.terms {
+    display: block;
+    margin-top: 0;
+    margin-left: 0;
+	}
+	.forFile, .sign-button {
+    width: 34%;
+	}
+	.heading-img {
+    height: 37%;
+	}
+	.full-check, .overcoming-obstacles {
+    margin-left: 25%;
+	}
+	.sidebar {
+    width: 33%;
+    margin-top: 5%;
+	}
+	.about-company-p, .sidebar {
+    display: block; 
+	}
+	.consultation-h {
+    margin-top: 2%;
+	}	
+	.consultation {
+    height: 82%;
+ 	}
+ 	.consultation-button {
+    padding: 10px 32px;
+	}
+	.leave-phone-p {
+    margin-right: 11%;
+	}
+	.heading {
+    margin-right: auto;
+    margin-left: auto;
+	}
+	.name-phone {
+    width: 250px;
+    }
+    .leave-phone-line {
+    display: none;
+	}
+	.validation-rule-text.wow.slideInLeft.overcoming-obstacles {
+    margin-bottom: 10%;
+	}
+}
+@media (max-width: 480px){
+	.slider-img {
+		height: 11vh;
+	}
+	.sidebar {
+    width: 53%;
+ 	}
+ 	.full-check, .overcoming-obstacles {
+    margin-left: 0%;
+	}
+	.leave-phone-line {
+    display: none
+	}
+	.consultation-h {
+    font-size: 20px;
+    margin-bottom: -2px;
+    }
+    .consultation-p {
+    font-size: 7px;
+    margin-bottom: 0;
+    }
+    .consultation-button {
+    padding: 7px 23px;
+	}
+	.consultation-button {
+    font-size: 11px;
+	}
+	.check-block {
+    height: 103px;
+	}
+	.your-sign-photo {
+    display: none;
+	}
+	.forFile, .sign-button {
+    width: 36%;
+	}
+	.forSignWord, .forFile {
+	display: block;
+    margin-bottom: 2%;
+	}
+	#signWord {
+    width: 180%;
+	}	
+	.heading-img {
+    height: 53%;
+	}
+	.heading {
+    width: 80%;
+    font-size: 15px;
+	}
+	.number {
+    display: none;
+	}
+	.your-sign-info {
+    width: 100%;
+	}
+	.validation-rule-text {
+	display: block;
+	}
+	.leave-phone {
+    background-size: cover;
+	}
+	.leave-phone-button {
+    margin-bottom: 2%;
+ 	}
+ 	.footer-town, .footer-networks {
+    font-size: 11px;
+	}
+	#file ~ label {
+    line-height: 1.3;
+	}
+	.menu {
+    margin-top: 34%;
+	}
+	.verbal-part, .attach-photo, .check {
+    height: 40px;
+	}
+	.check {
+    line-height: 2.3;
+	}
+	.arrow-to-down {
+    display: none;
+	}
+	.heading.one {
+    margin-left: 0;
+ 	}
+ 	.heading {
+    display: block;
+ 	}
+ 	.heading.three{
+ 		margin-left: auto;
+    	margin-right: auto;
+ 	}
+ 	.heading.one{
+ 		margin-left: auto;
+    	margin-right: auto;
+ 	}
+ 	.heading.two{
+ 		margin-left: auto;
+    	margin-right: auto;
+ 	}
+}
+@media (max-width: 320px){
+	.slider-img {
+	height: 8vh;
+	}
+	.validation-rule-text {
+	display: block;
+	}
+	.validation-rule-text {
+	font-size: 21px;
+	}
+	.consultation-img {
+    background: none;
+	}
+	.heading-img {
+    height: 35%;
+	}
+	.sidebar {
+    width: 82%;
+	}
+	.consultation {
+    margin-top: -20%;
+	}
+	#signWord {
+    width: 200%;
+	}
+	.forFile, .sign-button {
+    width: 62%;
+	}
+	.bbt {
+    font-size: 13px;
+	}
+	.check-sign {
+    font-size: 13px;
+	}
+	.open-registry {
+    font-size: 14px;
+ 	}
+ 	.in-cooperation-h {
+    font-size: 19px;
+	}
+	.sidebar-text {
+    font-size: 13px;
+	}
+	.logo {
+    width: 200px;
+    height: 73%;
+    background-size: contain;
+    margin-top: 3%;
+	}
+	.open-registry {
+    font-size: 13px;
+	}
+	.your-sign-info-line {
+    display: none;
+	}
+	.check-sign {
+    font-size: 15px;
+	}
+	.validation-rule-heading {
+    font-size: 23px;
+	}
+	.validation-rule-text {
+    font-size: 13px;
+	}
+	.leave-phone-h {
+    font-size: 23px;
+	}
+	.leave-phone-p {
+    text-align: center;
+	}
+	.footer-town, .footer-networks {
+    display: inline-block;
+    width: auto;
+	}
+}

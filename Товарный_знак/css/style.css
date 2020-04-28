@@ -1,0 +1,887 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@font-face {
+font-family: "OpenSans-Regular"; 
+src: url("../fonts/OpenSans-Regular.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+@font-face {
+font-family: "OpenSans-Bold"; 
+src: url("../fonts/OpenSans-Bold.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face {
+font-family: "OpenSans-Light"; 
+src: url("../fonts/OpenSans-Light.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face {
+font-family: "OpenSans-SemiBold"; 
+src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+body{
+	margin: 0;
+}
+body > div, nav, footer{
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+nav{    
+	width: 100%;
+    height: 80px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+    background-color: white;
+}
+.logo{
+	background: url('../img/federal-center.png') no-repeat;
+	width: 260px;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+.number{
+	height: max-content;
+	display: inline-block;
+    font-size: 20px;
+    font-family: "Spectral";
+    color: rgb(61, 58, 149);
+    font-weight: 600;
+    line-height: 2.7;
+}
+.nav{
+	max-width: 1370px;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.your-sign-info{
+	width: 60%;
+	height: max-content;
+	display: inline-block;
+	vertical-align: top;
+}
+.your-sign-photo{
+    width: 40%;
+    display: inline-block;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.your-sign{
+	padding-bottom: calc(231px / 2);
+	width: 100%;
+	background-color: #3c3994;
+	text-align: center;
+}
+.your-sign-content{
+	font-size: 0px;
+	max-width: 1370px;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+}
+.check-sign{
+  font-size: 32px;
+  font-family: "Spectral";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 5%; 
+  height: max-content;
+  margin-bottom: 17px
+}
+.open-registry{
+  font-size: 16px;
+  font-family: "OpenSans-Regular";
+  color: rgb(209, 208, 228);
+  line-height: 1.5;
+}
+.your-sign-info-line{
+	width: 150px;
+	height: 3px;
+	background-color: #e52322;
+}
+.sign-button{
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+}
+.verbal-part{
+	width: 100%;
+	height: 48px;
+	background-color: #8c8ac2;
+    font-size: 14px;
+    font-family: "OpenSans-Regular";
+    color: rgb(255, 255, 255);
+    line-height: 3.3;
+}
+.attach-photo{
+	width: 100%;
+	height: 48px;
+	background-color: #c6c5e0;
+	text-align: center;
+    font-size: 14px;
+    font-family: "OpenSans-Regular";
+    color: rgb(55, 52, 139);
+    line-height: 3.3;
+}
+.check{
+	width: 100%;
+	height: 48px;
+	background-color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+    font-size: 14px;
+    font-family: "OpenSans-Bold";
+    color: rgb(55, 52, 139);
+    line-height: 3.3;
+}
+#file{
+	display: none;
+}
+.forSignWord{
+	width: 50%;
+}
+.forSignWord,.forFile{
+	display: inline-block;
+	position: relative;
+}
+.forFile, .sign-button{
+	width: 25%;
+}
+#file ~ label{
+	position: absolute;
+    top: calc(50% - (16px/2));
+    left: 0;
+    cursor: pointer;
+    line-height: 1;
+}
+.your-sign input{
+	border: 0;
+}
+.your-sign input:focus{
+	outline: none;
+}
+#signWord ~ .auxiliaryLabel{
+	position: absolute;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(../img/marker-icon.png) no-repeat;
+    background-size: contain;
+    top: calc(50% - 10px);
+    left: 5%;
+}
+#file ~ .auxiliaryLabel{
+	position: absolute;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(../img/file-icon.png) no-repeat;
+    background-size: contain;
+    top: calc(50% - 10px);
+    left: 5%;
+}
+.arrow-to-down{
+	background: url(https://api.iconify.design/websymbol:left-open.svg?color=%23fff&rotate=270deg) no-repeat center center / contain;
+    width: 15px;
+    height: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+    cursor: pointer;
+}
+#signWord{
+	width: 100%;
+	padding-left: calc(5% + 25px);
+	box-sizing: border-box;
+}
+.forFile .textFile{
+	padding-left: calc(5% + 25px);
+	box-sizing: border-box;
+}
+#signWord:focus ~ .auxiliaryLabel{
+	display: none;
+}
+.terms{
+	display: inline-block;
+	color: #ffffff;
+	margin-top: 75px;
+}
+.terms::before {
+	background: url('https://api.iconify.design/websymbol:ok.svg?color=white') no-repeat center center / contain;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+    content: "";
+    color: #ffffff;
+    margin-right: 10px;
+}
+.kzvb{
+	font-family: "OpenSans-Light";
+	font-size: 16px;
+	color: #d1d0e4;
+}
+.chz{
+	font-size: 22px;
+	color: #d1d0e4;
+	font-family: "Spectral";
+    font-weight: bold;
+}
+.number-signs{
+	margin-top: 10px;
+}
+.bbt{
+	font-size: 20px;
+	color: #ffffff;
+	font-family: "OpenSans-Bold";
+}
+.chislo{
+	font-size: 30px;
+	color: #ffffff;
+	font-family: "Spectral";
+    font-weight: bold;
+}
+.bbtm{
+	font-size: 16px;
+	color: #ffffff;
+	font-family: "OpenSans-Bold";
+}
+.₽{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+.is-free, .for-sure {
+    margin-left: 10%;
+}
+.main-women {
+    background: url(../img/main-women.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 57vh;
+    max-height: 370px;
+    display: inline-block;
+    background-position: center;
+}
+.headingContainer{
+	font-size: 0;
+	margin-top: 10%;
+	margin-bottom: 5%;
+	overflow: hidden;
+}
+.heading {
+    font-size: 16px;
+    display: inline-block;
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 410px;
+    vertical-align: top;
+    max-height: 500px;
+}
+.heading.one{
+    margin-left: calc(-100% / 3);
+	margin-top: 0;
+	transition: 0.5s;
+}
+.heading.two{
+    margin-left: calc((-100% / 3) * 2);
+	transition: 0.5s;
+	margin-top: 40px;
+}
+.heading.three{
+    margin-left: calc((-100% / 3) * 3);
+	transition: 0.5s;
+	margin-top: 80px;
+}
+.heading.showHeading{
+	margin-left: 0;
+	display: inline-block;
+}
+.database-search-img{
+  	background: url('../img/database-search.png') no-repeat;
+}
+.identification-obstacles-img{
+	background: url('../img/identification-obstacles.png') no-repeat;
+}
+.free-consultation-img{
+	background: url('../img/free-consultation.png') no-repeat;
+}
+.heading-img {
+    height: 60%;
+    width: 100%;
+    background-size: contain;
+}
+.heading-h{
+	font-family: OpenSans-SemiBold;
+	color: #ffffff;
+}
+.heading-p{
+	font-family: OpenSans-Light;
+	color: #d1d0e4;
+}
+.check-block {
+    height: 231px;
+    background-color: #ebebf4;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.consultation{
+	height: 100%;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 1370px;
+    display: inline-block;
+    text-align: left;
+    margin-top: calc(-231px / 2);
+}
+.consultation-img{
+	background: url('../img/business-people.png') no-repeat;
+    width: 41%;
+    height: 100%;
+    background-size: contain;
+}
+.consultationImg {
+	background: url('../img/busines-people.png') no-repeat;
+	background-size: contain;
+}
+.consultation-text, .consultation-img{
+	display: inline-block;
+}
+.consultation-text{
+	width: 58%;
+	vertical-align: top;
+}
+.consultation-h{
+	font-size: 36px;
+	font-family: "Spectral";
+    color: #37348b;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.consultation-p{
+	font-size: 18px;
+	font-family: "OpenSans-Regular";
+    color: #22202a;
+    margin-top: 0;
+}
+.consultation-button{
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #423e9d;
+	padding: 13px 32px;
+	font-size: 14px;
+	font-family: OpenSans-SemiBold;
+	letter-spacing: 1.5px;
+	margin-top: 10px;
+    display: inline-block;
+}
+.consultation-paragraph{
+	width: max-content;
+	height: max-content;
+	display: inline-block;
+	margin-left: 20%;
+}
+.about-us{
+	text-align: center;
+}
+.about-us-content{
+	max-width: 1370px;
+	display: inline-block;
+	text-align: left;
+	width: 100%;
+}
+.about-company-h{
+	font-size: 30px;
+	color: rgb(55, 52, 139);
+	font-family: "Spectral";
+    font-weight: 700;
+    margin-bottom: -8px;
+}
+.about-company-line{
+	width: 80px;
+	height: 3px;
+	background-color: #e52322;
+	margin-bottom: 3%;
+}
+.about-company-p, .sidebar{
+	display: inline-block;
+}
+.about-company-p{
+	width: 73%;
+	height: max-content;
+	font-size: 14px;
+  	font-family: "OpenSans-Regular";
+  	color: rgb(34, 32, 42);
+}
+.sidebar{
+	width: 26%;
+	height: max-content;
+	vertical-align: top;
+	overflow: hidden;
+}
+.numeric{
+  	font-size: 34px;;
+ 	font-family: "Spectral";
+  	font-weight: 700;
+  	color: rgb(55, 52, 139);
+}
+.sidebar-text{
+	display: inline-block;
+	font-size: 15px;
+	font-family: "OpenSans-Bold";
+  	color: rgb(34, 32, 42);
+}
+.fon1{
+	background: url('../img/fon1.png') no-repeat;
+}
+.fon2{
+	background: url('../img/fon2.png') no-repeat;
+}
+.fon3{
+	background: url('../img/fon3.png') no-repeat;
+}
+.fon4{
+	background: url('../img/fon4.png') no-repeat;
+}
+.sidebar-img{
+	height: 60px;
+	width: 60px;
+	display: inline-block;
+	margin-bottom: 5%;
+	background-size: contain;
+}
+.in-cooperation-h{
+	font-size: 30px;
+	color: rgb(55, 52, 139);
+	font-family: "Spectral";
+    font-weight: 700;
+    margin-bottom: -5px;
+    margin-top: 4%;
+    background-size: contain;
+}
+.in-cooperation-line{
+	width: 68px;
+	height: 3px;
+	background-color: #e52322;
+}
+.slider {
+    margin-top: 4%;
+    margin-bottom: 5%;
+    width: 100%;
+    height: max-content;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.slider-img:hover{
+	filter: grayscale(0%)
+}
+.logo1{
+	background: url('../img/uspto.png') no-repeat;
+	background-size: contain;
+}
+.logo2{
+	background: url('../img/fts.png') no-repeat;
+	background-size: contain;
+}
+.logo3{
+	background: url('../img/epo.png') no-repeat;
+	background-size: contain;
+}
+.logo4{
+	background: url('../img/sipo.png') no-repeat;
+	background-size: contain;
+}
+.logo5{
+	background: url('../img/prh.png') no-repeat;
+	background-size: contain;
+}
+.logo6{
+	background: url('../img/prh.png') no-repeat;
+	background-size: contain;
+}
+
+.slider-img {
+    height: 14vh;
+    width: calc(100% / 5);
+    display: inline-block;
+    filter: grayscale(99%);
+    cursor: pointer;
+    vertical-align: top;
+    background-position: center;
+}
+.slider-arrow {
+    height: calc(2vh + 4vw);
+    width: 1%;
+    display: inline-block;
+    background: url(../img/right.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: white;
+    box-shadow: white -10px 0px 20px 20px;
+    cursor: pointer;
+}
+.slider-arrow.left{
+	transform: rotate(180deg);
+}
+.validation-rule{
+	text-align: center;
+	background-color: #3c3994;
+	width: 100%;
+	height: max-content;
+	padding-bottom: 10vh;
+}
+.validation-rule-content{
+	max-width: 1370px;
+	display: inline-block;
+	text-align: left;
+	width: 100%;
+	font-size: 0;
+}
+.validation-rule-heading{
+	font-size: 30px;
+	color: #ffffff;
+	font-family: "Spectral";
+    font-weight: 700;
+    margin-bottom: -5px;
+    margin-top: 4%;
+}
+.validation-rule-line{
+	width: 68px;
+	height: 3px;
+	background-color: #e52322;
+}
+.validation-rule-text{
+	vertical-align: top;
+	font-size: 14px;
+  	color: rgb(255, 255, 255);
+  	display: inline-block;
+  	font-family: OpenSans-Regular;
+  	margin-top: 5%;
+  	margin-bottom: 8%;
+}
+.validation-rule-h{
+	font-family: OpenSans-Bold;
+}
+.numeral1{
+	background: url('../img/numeral1.png') no-repeat;
+}
+.numeral2{
+	background: url('../img/numeral2.png') no-repeat;
+}
+.numeral3{
+	background: url('../img/numeral3.png') no-repeat;
+}
+.validation-rule-img{
+	height: 135px;
+	width: 100%;
+	background-size: contain;
+	display: inline-block;
+	background-position: right;
+	line-height: 1.5;
+}
+.full-check, .overcoming-obstacles{
+	margin-left: 13%
+}
+.in-cooperation-content{
+	text-align: center;
+	width: 100%;
+}
+.in-cooperation{
+	max-width: 1370px;
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+}
+.leave-phone {
+    text-align: center;
+    width: 100%;
+    background: url(../img/people-fon.png) no-repeat;
+    background-size: 100%;
+    padding-bottom: 4%;    
+    background-size: 100% 100%;
+}
+.leave-phone-content{
+	max-width: 1370px;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.leave-phone-h{
+	font-size: 30px;
+	color: #ffffff;
+	font-family: "Spectral";
+    font-weight: 700;
+    margin-top: 4%;
+    height: max-content;
+    display: inline-block;
+    text-align: center;
+}
+.leave-phone-line{
+	width: 86px;
+	height: 3px;
+	background-color: #e52322;
+	margin-top: -6px;
+}
+.leave-phone-p, .leave-phone-filling{
+	display: inline-block;
+	margin-top: 3%;
+}
+.leave-phone-p{
+	text-align: left;
+	font-size: 16px;
+  	color: #ffffff;
+  	font-family: OpenSans-Regular;
+  	margin-right: 14%;
+  	vertical-align: top;
+  	line-height: 1.667;
+}
+
+.name-phone{
+	padding-left: 6%;
+    display: block;
+    width: 285px;
+	height: 35px;
+	margin-bottom: 5%;
+	background-color: #8887ad87;
+  	font-size: 12px;
+  	font-family: OpenSans-Regular;
+  	border: 0;
+  	color: #ffffff;
+}
+.name-phone:focus{
+	outline: none;
+}
+.name-phone::placeholder{
+	font-size: 12px;
+  	font-family: OpenSans-Regular;
+  	color: #ffffff;
+}
+.verbal-part::placeholder{
+	font-size: 15px;
+  	font-family: OpenSans-Regular;
+  	color: #ffffff;
+}
+.leave-phone-button:focus{
+	outline: none;
+}
+.leave-phone-button{
+	color: #37348b;
+	background-color: #ffffff;
+	padding: 10px 40px;
+	font-size: 13px;
+    font-family: OpenSans-Bold;
+    letter-spacing: 1.0px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 2%;
+}
+footer{
+	text-align: center;
+	width: 100%;
+	background-color: #27262e;
+	color: #ffffff;
+	font-family: OpenSans-Regular;
+}
+.footer-content{
+	max-width: 1370px;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 0px;
+}
+.footer-button{
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #423e9d;
+	padding: 13px 32px;
+	font-size: 13px;
+    font-family: OpenSans-SemiBold;
+    letter-spacing: 1.0px;
+    display: inline-block;
+    cursor: pointer;
+}
+.footer-town, .footer-networks{
+	display: inline-block;
+	width: 50%;
+	font-size: 14px;
+	text-align: left;
+	vertical-align: top;
+	margin-top: 10%;
+	font-family: OpenSans-Regular;
+}
+.hand{
+	background: url('https://api.iconify.design/websymbol:left-open.svg?color=%23fff&rotate=270deg') no-repeat center center / contain;
+	width: 6px;
+	height: 6px;
+	display: inline-block;
+	margin-left: 4px;
+}
+.city-number{
+	font-size: 22px;
+}
+.city-mail{
+	font-size: 13px;
+	font-family: OpenSans-Bold;
+}
+.city-office{
+	font-size: 12px;
+}
+.fb{
+	background: url('../img/fb.png') no-repeat;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+.tw{
+	background: url('../img/tw.png') no-repeat;
+    margin-top: -3px;
+    margin-left: -5px;
+}
+.vk{
+	background: url('../img/vk.png') no-repeat;
+    margin-top: -5px;
+    margin-left: -7px;
+}
+.inst{
+	background: url('../img/inst.png') no-repeat;
+    margin-top: -4px;
+    margin-left: -7px;
+}
+.social-icons{      
+	width: 25px;
+    height: 25px;
+    background-position: bottom;
+    display: inline-block;
+    background-size: contain;
+}
+.social-block > div{    
+	display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #3b3993;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 20px;
+}
+.social-block > div:last-child{    
+    margin-right: 0;
+}
+.footer-law{
+	font-size: 12px;
+	font-family: OpenSans-Regular;
+	text-align: left;
+	width: 100%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+}
+.footer-law a{
+	color: inherit;
+}
+.footer-networks p{
+	margin-top: 9%;
+}
+.menu{
+	background: url('../img/menu.png') no-repeat;
+	background-size: contain;
+	width: 30px;
+    height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 24px;
+	cursor: pointer;
+}
+.number-menu{
+	float: right;
+}
+.topmenu{
+	list-style-type: none;
+	background-color: #ebebf4;
+	text-align: right;
+	font-family: OpenSans-Regular;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: none;
+	margin: 0;
+}
+.topmenu li{
+	border-bottom: 1px solid #d9d8e9;
+}
+.topmenu a{
+	width: 340px;
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    color: #22202a;
+    font-size: 15px;
+}
+.topmenu a:hover{
+	font-family: OpenSans-Bold;
+	color: #37348b;
+	text-transform: uppercase;
+}
+.drop-down-menu{
+	position: absolute;
+    top: 70px;
+    right: 0;
+}
+.left{
+	left: 0;
+	display: none;
+}
+.menu:active {
+    filter: hue-rotate(90deg) brightness(1.5);
+    outline: none;
+}
+#about-company{
+	height: 12vh;
+}
+.St-Petersburg{
+	display: none;
+}
+.lower-menu {
+	cursor: pointer;
+	position: absolute;
+    width: 20%;
+    list-style-type: none;
+    background-color: #ebebf4;
+    text-align: left;
+    font-family: OpenSans-Regular;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: none;
+    margin:0;
+}
+.lower-menu li {
+    border-bottom: 1px solid #d9d8e9;
+}
+.lower-menu a {
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    color: #22202a;
+    font-size: 15px;
+}
+.number-menu {
+    position: relative;
+}
